@@ -1,0 +1,292 @@
+*,::before,::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(20, 59, 59, 0.874);
+    color: aliceblue;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    padding: 22px 50px;
+    text-decoration: none;
+    font-size: 30px;
+    color: aliceblue;
+}
+
+
+.navBar a {
+    margin: auto 30px;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: large;
+}
+.header a:hover {
+    color: aqua;
+}
+
+
+/*  Home-section  */
+
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    justify-content: space-between;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1 {
+    font-weight: 700;
+    font-size: 56px;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #00ffff;
+}
+
+#hireMe {
+    background-color: aqua;
+    text-decoration: none;
+    padding: 7px;
+    color: aliceblue;
+    border-radius: 2px;
+}
+
+.pic {
+    background-color: aqua;
+    border-radius: 25%;
+}
+
+.social {
+    position: absolute;
+    bottom: 15px;
+}
+
+.social a {
+    display: inline-flex;
+    width: 50px;
+    height: 30px;
+    background: aqua;
+    border: 2px solid aqua;
+    text-decoration: none;
+    border-radius: 20%;
+    color: blue;
+}
+
+/*about-section*/
+
+.about {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading {
+    font-size: 37px;
+    color: aqua;
+}
+
+.about-img {
+    background-color: rgba(12, 113, 113, 0.874);
+    border-radius: 10px;
+}
+
+.about-content {
+    text-align: center;
+    font-size: 25px;
+}
+
+.about-content p {
+    margin: 20px;
+}
+
+.btn  {
+    background-color: #00ffff;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+/*services-section*/
+ 
+.services {
+    padding-top: 100px;
+    padding-bottom: 170px;
+}
+
+.services h2 {
+    color: #00ffff;
+    font-size: 40px;
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid rgb(202, 202, 220);
+}
+
+.services-box {
+    border: 1px solid rgb(104, 104, 112);
+    border-radius: 7px;
+    margin: 30px;
+    padding: 10px 30px;
+}
+
+.services-box i {
+    font-size: 100px;
+    color: rgb(192, 184, 175);
+}
+
+
+/*portfolio-section*/
+
+
+.portfolio-sec {
+    margin: 10px;
+    padding: 10px;
+}
+
+.portfolio-sec h3 {
+    color: #00ffff;
+    text-align: center;
+    font-size: 40px;
+}
+
+.projects-container {
+   margin: 60px auto;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid rgb(173, 190, 190);
+}
+
+.project1 , .project2 {
+    margin: 50px;
+    border: 1px solid rgb(173, 190, 190);
+}
+
+
+/*contact-section*/
+
+.contact {
+    margin: 50px;
+    padding: 25px;
+}
+
+.contact h2 {
+    color: aqua;
+    text-align: center;
+    font-size: 40px;
+}
+
+.contact-box {
+    margin-top: 10px;
+     display: flex;
+     justify-content: space-around;
+}
+
+ .contact-box-left {
+    background-color: #799393;
+  padding: 50px;
+  gap: 1;
+}
+
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+ input {
+   width: 100%; 
+}  
+
+#textarea {
+    width: 100%;
+}
+
+footer p {
+    position: relative;
+    left: 50px;
+}
+
+@media (max-width: 750px) {
+    .home-content h1 {
+        font-size: 28px;
+    }
+    
+    .home-content h3 {
+        font-size: 20px;
+    }
+    
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navBar {
+        margin-top: 20px;
+    }
+    
+    .navBar a {
+        margin: 5px;
+        font-size: 14px;
+    }
+    
+    .home {
+        padding: 0 3%;
+    }
+    
+    .pic img{
+        width: 0;
+        height: 0;
+    }
+    
+    .social {
+        top: 105%;
+    }
+    
+    .social a {
+        width: 25px;
+        height: 25px;
+    }
+
+    .services-container {
+        flex-direction: column;
+    }
+
+    .projects-container {
+        flex-direction: column;
+    }
+
+    .mediaImg1, .mediaImg2 {
+        width: 100%;
+        height: 80%;
+    }
+
+    footer {
+        position: absolute;
+        left: 5px;
+        right: 30%;
+    }
+
+}
